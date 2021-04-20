@@ -1,0 +1,2493 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Issue",
+            "id": "interface-Issue-dbb14548f0dec38bcdccc429b0fdf80d",
+            "file": "projects/github-sniffer-web/src/app/models/repository.ts",
+            "type": "interface",
+            "sourceCode": "export interface Label {\r\n    id: string;\r\n    name: string;\r\n    checked_at?: string;\r\n}\r\n\r\nexport interface User {\r\n    id: string;\r\n    login: string;\r\n    avatar_url: string;\r\n    url: string; g;\r\n}\r\n\r\nexport interface Issue {\r\n    html_url: string;\r\n    title: string;\r\n    created_at: string;\r\n    updated_at: string;\r\n    labels: Label[];\r\n    user: User;\r\n    id: string;\r\n}\r\n\r\nexport interface Repository {\r\n    repository_id: string;\r\n    full_name: string;\r\n    active_labels: Label[];\r\n    issues: Issue[];\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "created_at",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "html_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "labels",
+                    "type": "Label[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "updated_at",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "user",
+                    "type": "User",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "Label",
+            "id": "interface-Label-dbb14548f0dec38bcdccc429b0fdf80d",
+            "file": "projects/github-sniffer-web/src/app/models/repository.ts",
+            "type": "interface",
+            "sourceCode": "export interface Label {\r\n    id: string;\r\n    name: string;\r\n    checked_at?: string;\r\n}\r\n\r\nexport interface User {\r\n    id: string;\r\n    login: string;\r\n    avatar_url: string;\r\n    url: string; g;\r\n}\r\n\r\nexport interface Issue {\r\n    html_url: string;\r\n    title: string;\r\n    created_at: string;\r\n    updated_at: string;\r\n    labels: Label[];\r\n    user: User;\r\n    id: string;\r\n}\r\n\r\nexport interface Repository {\r\n    repository_id: string;\r\n    full_name: string;\r\n    active_labels: Label[];\r\n    issues: Issue[];\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "checked_at",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "Repository",
+            "id": "interface-Repository-dbb14548f0dec38bcdccc429b0fdf80d",
+            "file": "projects/github-sniffer-web/src/app/models/repository.ts",
+            "type": "interface",
+            "sourceCode": "export interface Label {\r\n    id: string;\r\n    name: string;\r\n    checked_at?: string;\r\n}\r\n\r\nexport interface User {\r\n    id: string;\r\n    login: string;\r\n    avatar_url: string;\r\n    url: string; g;\r\n}\r\n\r\nexport interface Issue {\r\n    html_url: string;\r\n    title: string;\r\n    created_at: string;\r\n    updated_at: string;\r\n    labels: Label[];\r\n    user: User;\r\n    id: string;\r\n}\r\n\r\nexport interface Repository {\r\n    repository_id: string;\r\n    full_name: string;\r\n    active_labels: Label[];\r\n    issues: Issue[];\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "active_labels",
+                    "type": "Label[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "full_name",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "issues",
+                    "type": "Issue[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "repository_id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-dbb14548f0dec38bcdccc429b0fdf80d",
+            "file": "projects/github-sniffer-web/src/app/models/repository.ts",
+            "type": "interface",
+            "sourceCode": "export interface Label {\r\n    id: string;\r\n    name: string;\r\n    checked_at?: string;\r\n}\r\n\r\nexport interface User {\r\n    id: string;\r\n    login: string;\r\n    avatar_url: string;\r\n    url: string; g;\r\n}\r\n\r\nexport interface Issue {\r\n    html_url: string;\r\n    title: string;\r\n    created_at: string;\r\n    updated_at: string;\r\n    labels: Label[];\r\n    user: User;\r\n    id: string;\r\n}\r\n\r\nexport interface Repository {\r\n    repository_id: string;\r\n    full_name: string;\r\n    active_labels: Label[];\r\n    issues: Issue[];\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "avatar_url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "g",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "id",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "login",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 150,
+            "methods": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "GithubDataService",
+            "id": "injectable-GithubDataService-5d0c05a7b4106a5cc2aeb41a4dad1339",
+            "file": "projects/github-sniffer-web/src/app/github-data.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "encloseInQuotes",
+                    "args": [
+                        {
+                            "name": "text",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 47,
+                    "jsdoctags": [
+                        {
+                            "name": "text",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getIssues",
+                    "args": [
+                        {
+                            "name": "repo",
+                            "type": "string"
+                        },
+                        {
+                            "name": "label",
+                            "type": "string"
+                        },
+                        {
+                            "name": "page",
+                            "type": "number"
+                        },
+                        {
+                            "name": "lastCheckDate",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 38,
+                    "jsdoctags": [
+                        {
+                            "name": "repo",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "label",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "page",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "lastCheckDate",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getRepositoryId",
+                    "args": [
+                        {
+                            "name": "repositoryName",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 20,
+                    "jsdoctags": [
+                        {
+                            "name": "repositoryName",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "login",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 15
+                },
+                {
+                    "name": "searchLabelsInRepository",
+                    "args": [
+                        {
+                            "name": "repositoryId",
+                            "type": "string"
+                        },
+                        {
+                            "name": "query",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<Label[]>",
+                    "typeParameters": [],
+                    "line": 25,
+                    "jsdoctags": [
+                        {
+                            "name": "repositoryId",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "query",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { HttpClient } from '@angular/common/http';\r\nimport { Injectable } from '@angular/core';\r\nimport { Observable } from 'rxjs';\r\nimport { map } from 'rxjs/operators';\r\nimport { environment } from '../environments/environment';\r\nimport { Issue, Label } from './models/repository';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class GithubDataService {\r\n\r\n  constructor(private http: HttpClient) { }\r\n\r\n  login(): Observable<any> {\r\n    const requestUrl = environment.github_api.authorize_url;\r\n    return this.http.get(requestUrl);\r\n  }\r\n\r\n  getRepositoryId(repositoryName: string): Observable<any> {\r\n    const requestUrl = `${environment.github_api.base_url}/repos/${repositoryName}`;\r\n    return this.http.get(requestUrl).pipe(map((res: any) => res.id));\r\n  }\r\n\r\n  searchLabelsInRepository(repositoryId: string, query: string): Observable<Label[]> {\r\n    const requestUrl = `${environment.github_api.base_url}/search/labels?repository_id=${repositoryId}&q=${query}`;\r\n    return this.http.get<Label[]>(requestUrl).pipe(map((res: any) => {\r\n      return res.items.map(item => {\r\n        const label: Label = {\r\n          id: item.id,\r\n          name: item.name\r\n        };\r\n        return label;\r\n       });\r\n    }));\r\n  }\r\n\r\n  getIssues(repo: string, label: string, page: number, lastCheckDate: string): Observable<any> {   \r\n    console.info(`Searching for label:${label} in repo:${repo} created after: ${lastCheckDate}.`); \r\n    const encodedRepo = encodeURIComponent(this.encloseInQuotes(repo));\r\n    const encodedLabel = encodeURIComponent(this.encloseInQuotes(label));\r\n    const queryString = `q=repo:${encodedRepo}+label:${encodedLabel}+created:>${lastCheckDate}&sort=created&per_page=30&page=${page}`;\r\n    const requestUrl = environment.github_api.search_issues_url + `?${queryString}`;\r\n    return this.http.get(requestUrl);\r\n  }\r\n\r\n  encloseInQuotes(text: string): string {\r\n    return `\\\"${text}\\\"`;\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient"
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        },
+        {
+            "name": "StorageService",
+            "id": "injectable-StorageService-4c5daa4b1e57a2b396d16cf386765e18",
+            "file": "projects/github-sniffer-web/src/app/storage.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getRepository",
+                    "args": [
+                        {
+                            "name": "repositoryId",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Repository",
+                    "typeParameters": [],
+                    "line": 20,
+                    "jsdoctags": [
+                        {
+                            "name": "repositoryId",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "removeItem",
+                    "args": [
+                        {
+                            "name": "key",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "jsdoctags": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setItem",
+                    "args": [
+                        {
+                            "name": "key",
+                            "type": "string"
+                        },
+                        {
+                            "name": "value",
+                            "type": "any"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "jsdoctags": [
+                        {
+                            "name": "key",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "value",
+                            "type": "any",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { Injectable } from '@angular/core';\r\nimport { Repository } from './models/repository';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class StorageService {\r\n\r\n  constructor() { }\r\n\r\n  setItem(key: string, value: any): void {\r\n    const valueString: string = JSON.stringify(value);\r\n    localStorage.setItem(key, valueString);\r\n  }\r\n\r\n  removeItem(key: string): void {\r\n    localStorage.removeItem(key);\r\n  }\r\n\r\n  getRepository(repositoryId: string): Repository {\r\n    const valueString = localStorage.getItem(repositoryId);\r\n    return JSON.parse(valueString);\r\n  }\r\n}\r\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 7
+            },
+            "type": "injectable"
+        }
+    ],
+    "classes": [
+        {
+            "name": "AppPage",
+            "id": "class-AppPage-3d75f8a3edc07717eca8712ab41069cc",
+            "file": "projects/github-sniffer-web/e2e/src/app.po.ts",
+            "type": "class",
+            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  async navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl);\n  }\n\n  async getTitleText(): Promise<string> {\n    return element(by.css('gsw-root .content span')).getText();\n  }\n}\n",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "getTitleText",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<string>",
+                    "typeParameters": [],
+                    "line": 8,
+                    "modifierKind": [
+                        120
+                    ]
+                },
+                {
+                    "name": "navigateTo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<unknown>",
+                    "typeParameters": [],
+                    "line": 4,
+                    "modifierKind": [
+                        120
+                    ]
+                }
+            ],
+            "indexSignatures": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AddRepositoryComponent",
+            "id": "component-AddRepositoryComponent-20deda79bc7052bb1219f712cc479332",
+            "file": "projects/github-sniffer-web/src/app/dashboard/add-repository/add-repository.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "gsw-add-repository",
+            "styleUrls": [
+                "./add-repository.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./add-repository.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "labelInput",
+                    "type": "ElementRef<HTMLInputElement>",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'labelInput'"
+                        }
+                    ]
+                },
+                {
+                    "name": "labelPrefix",
+                    "defaultValue": "new FormControl('')",
+                    "type": "FormControl",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "matchingLabels",
+                    "type": "Observable<Label[]>",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "repository",
+                    "defaultValue": "new FormControl('', Validators.required)",
+                    "type": "FormControl",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "repositoryId",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "selectedLabels",
+                    "defaultValue": "[]",
+                    "type": "Label[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "separatorKeysCodes",
+                    "defaultValue": "[ENTER, COMMA]",
+                    "type": "number[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "add",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "MatChipInputEvent"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 40,
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "MatChipInputEvent",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cancelAddRepository",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 73
+                },
+                {
+                    "name": "onAdd",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 62
+                },
+                {
+                    "name": "remove",
+                    "args": [
+                        {
+                            "name": "labelId",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 43,
+                    "jsdoctags": [
+                        {
+                            "name": "labelId",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "selected",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "MatAutocompleteSelectedEvent"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 50,
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "MatAutocompleteSelectedEvent",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "verifyRepository",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 56
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';\r\nimport { FormControl, Validators } from '@angular/forms';\r\nimport { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';\r\nimport { MatBottomSheetRef } from '@angular/material/bottom-sheet';\r\nimport { MatChipInputEvent } from '@angular/material/chips';\r\nimport {COMMA, ENTER} from '@angular/cdk/keycodes';\r\nimport { Observable } from 'rxjs';\r\nimport { debounceTime, map, startWith, switchMap } from 'rxjs/operators';\r\nimport { GithubDataService } from '../../github-data.service';\r\nimport { StorageService } from '../../storage.service';\r\nimport { Issue, Label, Repository } from '../../models/repository';\r\n\r\n@Component({\r\n  selector: 'gsw-add-repository',\r\n  templateUrl: './add-repository.component.html',\r\n  styleUrls: ['./add-repository.component.scss']\r\n})\r\nexport class AddRepositoryComponent {\r\n\r\n  repository: FormControl = new FormControl('', Validators.required);\r\n  labelPrefix: FormControl = new FormControl('');\r\n  matchingLabels: Observable<Label[]>;\r\n  selectedLabels: Label[] = [];\r\n  repositoryId: string;\r\n  separatorKeysCodes: number[] = [ENTER, COMMA];\r\n\r\n  @ViewChild('labelInput') labelInput: ElementRef<HTMLInputElement>;\r\n\r\n  constructor(\r\n    private bottomSheetRef: MatBottomSheetRef<AddRepositoryComponent>,\r\n    private dataService: GithubDataService,\r\n    private storageService: StorageService\r\n  ) {\r\n    this.matchingLabels = this.labelPrefix.valueChanges.pipe(\r\n      debounceTime(500),\r\n      switchMap((query: string| null) => query ? this.dataService.searchLabelsInRepository(this.repositoryId, query) : [])\r\n    );\r\n  }\r\n\r\n  add(event: MatChipInputEvent): void {\r\n  }\r\n\r\n  remove(labelId: string): void {\r\n    const index = this.selectedLabels.findIndex(item => item.id === labelId);\r\n    if (index >= 0) {\r\n      this.selectedLabels.splice(index, 1);\r\n    }\r\n  }\r\n\r\n  selected(event: MatAutocompleteSelectedEvent): void {\r\n    this.selectedLabels.push(event.option.value);\r\n    this.labelInput.nativeElement.value = '';\r\n    this.labelPrefix.setValue(null);\r\n  }\r\n\r\n  verifyRepository(): void{\r\n    this.dataService.getRepositoryId(this.repository.value).subscribe((repositoryId) => {\r\n      this.repositoryId = repositoryId;\r\n    });\r\n  }\r\n\r\n  onAdd(): void {\r\n    const currentRepository: Repository = {\r\n      repository_id: this.repositoryId,\r\n      full_name: this.repository.value,\r\n      active_labels: this.selectedLabels,\r\n      issues: []\r\n    };\r\n    this.storageService.setItem(currentRepository.repository_id, currentRepository);\r\n    this.bottomSheetRef.dismiss();\r\n  }\r\n\r\n  cancelAddRepository(): void {\r\n    this.bottomSheetRef.dismiss();\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./add-repository.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "bottomSheetRef",
+                        "type": "MatBottomSheetRef<AddRepositoryComponent>"
+                    },
+                    {
+                        "name": "dataService",
+                        "type": "GithubDataService"
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService"
+                    }
+                ],
+                "line": 27,
+                "jsdoctags": [
+                    {
+                        "name": "bottomSheetRef",
+                        "type": "MatBottomSheetRef<AddRepositoryComponent>",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "dataService",
+                        "type": "GithubDataService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<div class=\"container\">\r\n    <form>\r\n        <div class=\"flex-col\">\r\n            <div>\r\n                <h2 class=\"text-2xl pt-1 pb-2\">Add Repository</h2>\r\n            </div>\r\n            <div class=\"flex-col pb-4\">\r\n                <div>\r\n                    <mat-form-field class=\"w-full\">\r\n                        <mat-label>Repository Name</mat-label>\r\n                        <input matInput [formControl]=\"repository\" placeholder=\"microsoft/vscode\">\r\n                    </mat-form-field>\r\n                </div>\r\n                <div>\r\n                    <button mat-raised-button type=\"button\" color=\"primary\" (click)=\"verifyRepository()\">Verify\r\n                        Repository</button>\r\n                    <mat-icon *ngIf=\"repositoryId\" class=\"self-center text-green-700\">check_circle</mat-icon>\r\n                </div>\r\n            </div>\r\n            <mat-divider></mat-divider>\r\n            <div class=\"pt-3 pb-4\">\r\n                <mat-form-field class=\"w-full\">\r\n                    <mat-label>Select Labels</mat-label>\r\n                    <mat-chip-list #chipList aria-label=\"Label selection\">\r\n                        <mat-chip *ngFor=\"let label of selectedLabels\" [selectable]=\"selectable\" removable=\"true\"\r\n                            (removed)=\"remove(label.id)\">\r\n                            {{label.name}}\r\n                            <mat-icon matChipRemove>cancel</mat-icon>\r\n                        </mat-chip>\r\n                        <input placeholder=\"New Label...\" #labelInput [formControl]=\"labelPrefix\"\r\n                            [matAutocomplete]=\"auto\" [matChipInputFor]=\"chipList\"\r\n                            [matChipInputSeparatorKeyCodes]=\"separatorKeysCodes\" (matChipInputTokenEnd)=\"add($event)\">\r\n                    </mat-chip-list>\r\n                    <mat-autocomplete #auto=\"matAutocomplete\" (optionSelected)=\"selected($event)\">\r\n                        <mat-option *ngFor=\"let mlabels of matchingLabels | async\" [value]=\"mlabels\">\r\n                            {{mlabels.name}}\r\n                        </mat-option>\r\n                    </mat-autocomplete>\r\n                </mat-form-field>\r\n            </div>\r\n            <div class=\"flex-row justify-evenly pb-4 pt-3\">\r\n                <button mat-raised-button type=\"button\" color=\"primary\" (click)=\"onAdd()\">Add</button>\r\n                <button mat-stroked-button type=\"button\" (click)=\"cancelAddRepository()\">Cancel</button>\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-ab23caa6f776716a3635675d75ec9142",
+            "file": "projects/github-sniffer-web/src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "gsw-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'github-sniffer-web'",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'gsw-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'github-sniffer-web';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<mat-toolbar class=\"p-4 flex-row justify-between bg-gray-200 text-gray-800 dark:bg-black dark:text-gray-50\">\r\n    <h1 [routerLink]=\"['/']\" class=\"text-xl\">Github Sniffer</h1>\r\n</mat-toolbar>\r\n<router-outlet></router-outlet>\r\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-642c6c4e474cd5a0ac760dfda26b2fc9",
+            "file": "stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string"
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "DeleteDialogComponent",
+            "id": "component-DeleteDialogComponent-4614cbd41ae5522d24accf2582cb00fb",
+            "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/delete-dialog.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "gsw-delete-dialog",
+            "styleUrls": [
+                "./delete-dialog.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./delete-dialog.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "data",
+                    "type": "Repository",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "decorators": [
+                        {
+                            "name": "Inject",
+                            "stringifiedArguments": "MAT_DIALOG_DATA"
+                        }
+                    ],
+                    "modifierKind": [
+                        114
+                    ]
+                },
+                {
+                    "name": "dialogRef",
+                    "type": "MatDialogRef<DeleteDialogComponent>",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "cancelDelete",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 27
+                },
+                {
+                    "name": "deleteRepository",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Inject, OnInit } from '@angular/core';\r\nimport { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';\r\nimport { Repository } from '../../models/repository';\r\nimport { StorageService } from '../../storage.service';\r\n\r\n@Component({\r\n  selector: 'gsw-delete-dialog',\r\n  templateUrl: './delete-dialog.component.html',\r\n  styleUrls: ['./delete-dialog.component.scss']\r\n})\r\nexport class DeleteDialogComponent implements OnInit {\r\n\r\n  constructor(\r\n    public dialogRef: MatDialogRef<DeleteDialogComponent>,\r\n    @Inject(MAT_DIALOG_DATA) public data: Repository,\r\n    private storageService: StorageService\r\n  ) { }\r\n\r\n  ngOnInit(): void {\r\n  }\r\n\r\n  deleteRepository() {\r\n    this.storageService.removeItem(this.data.repository_id);\r\n    this.dialogRef.close(true);\r\n  }\r\n\r\n  cancelDelete() {\r\n    this.dialogRef.close(false);\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./delete-dialog.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "dialogRef",
+                        "type": "MatDialogRef<DeleteDialogComponent>"
+                    },
+                    {
+                        "name": "data",
+                        "type": "Repository"
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService"
+                    }
+                ],
+                "line": 11,
+                "jsdoctags": [
+                    {
+                        "name": "dialogRef",
+                        "type": "MatDialogRef<DeleteDialogComponent>",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "data",
+                        "type": "Repository",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"container\">\r\n    <div>\r\n        Do you want to delete {{data?.full_name}}? \r\n    </div>\r\n    <div class=\"flex flex-row justify-around pt-5\">        \r\n        <button mat-raised-button (click)=\"deleteRepository()\" color=\"warn\">Delete</button>\r\n        <button mat-raised-button (click)=\"cancelDelete()\">No</button>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-246e2a69dc126a3bd76c6328dd3b93e2",
+            "file": "stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "line": 53,
+                    "type": "unknown"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 62,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 56,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 59,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          primary\n          size=\"small\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "LoginComponent",
+            "id": "component-LoginComponent-f4362332c1116c50bbcfadadc3b4b42e",
+            "file": "projects/github-sniffer-web/src/app/login/login.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "gsw-login",
+            "styleUrls": [
+                "./login.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./login.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "login",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Inject, OnInit } from '@angular/core';\r\nimport { DOCUMENT } from '@angular/common';\r\n\r\nimport { GithubDataService } from '../github-data.service';\r\nimport { environment } from '../../environments/environment';\r\n\r\n@Component({\r\n  selector: 'gsw-login',\r\n  templateUrl: './login.component.html',\r\n  styleUrls: ['./login.component.scss']\r\n})\r\nexport class LoginComponent {\r\n\r\n  constructor(\r\n    @Inject(DOCUMENT) private document: Document,\r\n    ) { } \r\n\r\n  login(): void{\r\n    const authUrl = `${environment.github_api.authorize_url}?client_id=${environment.credentials.client_id}`;\r\n    this.document.location.href = authUrl;\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./login.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "document",
+                        "type": "Document"
+                    }
+                ],
+                "line": 12,
+                "jsdoctags": [
+                    {
+                        "name": "document",
+                        "type": "Document",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "templateData": "<div class=\"container\">\r\n    <button mat-raised-button color=\"primary\" (click)=\"login()\">Login With Github</button>\r\n</div>"
+        },
+        {
+            "name": "MainComponent",
+            "id": "component-MainComponent-31f9e1b4fac9c37397dd16364b618afa",
+            "file": "projects/github-sniffer-web/src/app/dashboard/main/main.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "gsw-main",
+            "styleUrls": [
+                "./main.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./main.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "activeRepos",
+                    "defaultValue": "[]",
+                    "type": "Repository[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "dialog",
+                    "type": "MatDialog",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "addRepository",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42
+                },
+                {
+                    "name": "deleteRepository",
+                    "args": [
+                        {
+                            "name": "repositoryIndex",
+                            "type": "number"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 48,
+                    "jsdoctags": [
+                        {
+                            "name": "repositoryIndex",
+                            "type": "number",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getCurrentRepositories",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 33
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\r\nimport { MatBottomSheet } from '@angular/material/bottom-sheet';\r\nimport { MatDialog } from '@angular/material/dialog';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { Observable } from 'rxjs';\r\nimport { map, switchMap } from 'rxjs/operators';\r\nimport { GithubDataService } from '../../github-data.service';\r\nimport { Repository } from '../../models/repository';\r\nimport { StorageService } from '../../storage.service';\r\nimport { AddRepositoryComponent } from '../add-repository/add-repository.component';\r\nimport { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';\r\n\r\n@Component({\r\n  selector: 'gsw-main',\r\n  templateUrl: './main.component.html',\r\n  styleUrls: ['./main.component.scss']\r\n})\r\nexport class MainComponent implements OnInit {\r\n\r\n  constructor(\r\n    private bottomSheet: MatBottomSheet,\r\n    public dialog: MatDialog,\r\n    private snackBar: MatSnackBar,\r\n    private storageService: StorageService\r\n  ) { }\r\n\r\n  activeRepos: Repository[] = [];\r\n\r\n  ngOnInit(): void {\r\n    this.getCurrentRepositories();\r\n  }\r\n\r\n  getCurrentRepositories(): void {\r\n    this.activeRepos = [];\r\n    const totalRepos = localStorage.length;\r\n    for (let index = 0; index < totalRepos; index++) {\r\n      const element =  this.storageService.getRepository(localStorage.key(index));\r\n      this.activeRepos.push(element);\r\n    }\r\n  }\r\n\r\n  addRepository(): void {\r\n    this.bottomSheet.open(AddRepositoryComponent).afterDismissed().subscribe(() => {\r\n      console.log(localStorage.length);\r\n    });\r\n  }\r\n\r\n  deleteRepository(repositoryIndex: number): void {\r\n    const dialogRef = this.dialog.open(DeleteDialogComponent, {\r\n      width: '300px',\r\n      data: this.activeRepos[repositoryIndex]\r\n    });\r\n    dialogRef.afterClosed().subscribe((isDeleted: boolean)=>{\r\n      if(isDeleted) {\r\n        this.snackBar.open(`${this.activeRepos[repositoryIndex].full_name} deleted`, 'Okay', {\r\n          duration: 3000\r\n        });\r\n        this.getCurrentRepositories();\r\n      }\r\n    })\r\n  }\r\n\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./main.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "bottomSheet",
+                        "type": "MatBottomSheet"
+                    },
+                    {
+                        "name": "dialog",
+                        "type": "MatDialog"
+                    },
+                    {
+                        "name": "snackBar",
+                        "type": "MatSnackBar"
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService"
+                    }
+                ],
+                "line": 18,
+                "jsdoctags": [
+                    {
+                        "name": "bottomSheet",
+                        "type": "MatBottomSheet",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "dialog",
+                        "type": "MatDialog",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "snackBar",
+                        "type": "MatSnackBar",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"container mx-auto\">    \r\n    <mat-list>\r\n        <div mat-subheader>Your repositories</div>\r\n        <mat-list-item *ngFor=\"let repo of activeRepos; index as i\">\r\n            <div class=\"flex flex-row justify-start w-full\" [routerLink]=\"['/dashboard/details', repo.repository_id]\">\r\n                <mat-icon mat-list-icon color=\"primary\">source</mat-icon>\r\n                <div> {{repo.full_name}} </div>\r\n            </div>            \r\n            <div>\r\n                <button mat-icon-button [matMenuTriggerFor]=\"menu\" aria-label=\"Your repo's edit options\">\r\n                    <mat-icon color=\"primary\">more_vert</mat-icon>\r\n                  </button>\r\n                  <mat-menu #menu=\"matMenu\">\r\n                    <button mat-menu-item>\r\n                      <mat-icon  color=\"primary\">edit</mat-icon>\r\n                      <span>Edit</span>\r\n                    </button>\r\n                    <button mat-menu-item (click)=\"deleteRepository(i)\">\r\n                      <mat-icon color=\"primary\">delete</mat-icon>\r\n                      <span>Delete</span>\r\n                    </button>                    \r\n                  </mat-menu>\r\n            </div>\r\n        </mat-list-item>        \r\n    </mat-list>\r\n    <div class=\"fixed bottom-7 right-7\">\r\n        <button mat-fab aria-label=\"Add new repository\" (click)=\"addRepository()\">\r\n            <mat-icon>add</mat-icon>\r\n        </button>\r\n    </div>\r\n</div>"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-8f196770333aa216860a88c0b6b221aa",
+            "file": "stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "line": 64,
+                    "type": "unknown"
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 73,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 67,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "line": 70,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"onLogout.emit($event)\"\n      (onLogin)=\"onLogin.emit($event)\"\n      (onCreateAccount)=\"onCreateAccount.emit($event)\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  @Input()\n  user: unknown = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n\n// export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (\n//   <article>\n//     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />\n\n// );\n// Page.propTypes = {\n//   user: PropTypes.shape({}),\n//   onLogin: PropTypes.func.isRequired,\n//   onLogout: PropTypes.func.isRequired,\n//   onCreateAccount: PropTypes.func.isRequired,\n// };\n\n// Page.defaultProps = {\n//   user: null,\n// };\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nh2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\np {\n  margin: 1em 0;\n}\n\na {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nli {\n  margin-bottom: 8px;\n}\n\n.tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "RepositoryDetailsComponent",
+            "id": "component-RepositoryDetailsComponent-87f7cde86a65792ccf52d61a29ecbfa7",
+            "file": "projects/github-sniffer-web/src/app/dashboard/repository-details/repository-details.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "gsw-repository-details",
+            "styleUrls": [
+                "./repository-details.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./repository-details.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "activeRepository",
+                    "type": "Repository",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "activeRepositoryId",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "componentDestroyed$",
+                    "type": "Subject<boolean>",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "issues$",
+                    "type": "BehaviorSubject<Issue[]>",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "fetchIssuesForEachLabel",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 95,
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "tagName": {
+                                "pos": 2860,
+                                "end": 2867,
+                                "flags": 0,
+                                "escapedText": "returns"
+                            },
+                            "comment": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "fetchUpdatedData",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<void>",
+                    "typeParameters": [],
+                    "line": 64,
+                    "description": "",
+                    "modifierKind": [
+                        120
+                    ]
+                },
+                {
+                    "name": "fetchUpdatedDataFromStorage",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 47,
+                    "description": ""
+                },
+                {
+                    "name": "getOneWeekAgo",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 121,
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "tagName": {
+                                "pos": 3484,
+                                "end": 3491,
+                                "flags": 0,
+                                "escapedText": "returns"
+                            },
+                            "comment": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "getUniqueIssues",
+                    "args": [
+                        {
+                            "name": "issues",
+                            "type": "Issue[]"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Issue[]",
+                    "typeParameters": [],
+                    "line": 112,
+                    "description": "",
+                    "jsdoctags": [
+                        {
+                            "name": {
+                                "pos": 3266,
+                                "end": 3272,
+                                "flags": 0,
+                                "escapedText": "issues"
+                            },
+                            "type": "Issue[]",
+                            "tagName": {
+                                "pos": 3260,
+                                "end": 3265,
+                                "flags": 0,
+                                "escapedText": "param"
+                            },
+                            "comment": ""
+                        },
+                        {
+                            "tagName": {
+                                "pos": 3281,
+                                "end": 3288,
+                                "flags": 0,
+                                "escapedText": "returns"
+                            },
+                            "comment": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 127
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31
+                },
+                {
+                    "name": "refreshIssues",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 55,
+                    "description": ""
+                },
+                {
+                    "name": "trackByFunction",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": ""
+                        },
+                        {
+                            "name": "item",
+                            "type": "Issue"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 40,
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "item",
+                            "type": "Issue",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { ThisReceiver } from '@angular/compiler';\r\nimport { Component, OnDestroy, OnInit } from '@angular/core';\r\nimport { ActivatedRoute } from '@angular/router';\r\nimport { BehaviorSubject, forkJoin, Observable, of, Subject } from 'rxjs';\r\nimport { map, switchMap, takeUntil, tap } from 'rxjs/operators';\r\nimport { GithubDataService } from '../../github-data.service';\r\nimport { Issue, Label, Repository } from '../../models/repository';\r\nimport { StorageService } from '../../storage.service';\r\n\r\n@Component({\r\n  selector: 'gsw-repository-details',\r\n  templateUrl: './repository-details.component.html',\r\n  styleUrls: ['./repository-details.component.scss']\r\n})\r\nexport class RepositoryDetailsComponent implements OnInit, OnDestroy {\r\n\r\n  issues$: BehaviorSubject<Issue[]>;\r\n  componentDestroyed$: Subject<boolean>;\r\n  activeRepositoryId: string;\r\n  activeRepository: Repository;\r\n\r\n  constructor(\r\n    private route: ActivatedRoute,\r\n    private dataService: GithubDataService,\r\n    private storageService: StorageService\r\n  ) {\r\n    this.issues$ = new BehaviorSubject<Issue[]>([]);\r\n    this.componentDestroyed$ = new Subject<boolean>();\r\n  }\r\n\r\n  ngOnInit(): void {\r\n    this.route.paramMap.pipe(\r\n      takeUntil(this.componentDestroyed$)\r\n    ).subscribe((params) => {\r\n      this.activeRepositoryId = params.get('id');\r\n      this.fetchUpdatedDataFromStorage()\r\n    });\r\n  }\r\n\r\n  trackByFunction(index, item: Issue) {\r\n    return item.id;\r\n  }\r\n\r\n  /**\r\n   * \r\n   */\r\n  fetchUpdatedDataFromStorage(): void {\r\n    this.activeRepository = this.storageService.getRepository(this.activeRepositoryId);\r\n    this.issues$.next(this.activeRepository.issues);\r\n  }\r\n\r\n  /**\r\n   * \r\n   */\r\n  refreshIssues(): void {\r\n    this.fetchUpdatedData().then(() => {\r\n      this.fetchUpdatedDataFromStorage();\r\n    });\r\n  }\r\n\r\n  /**\r\n   * \r\n   */\r\n  async fetchUpdatedData(): Promise<void> {\r\n    this.fetchIssuesForEachLabel()\r\n      .pipe(\r\n        tap((res: Array<Issue[]>) => {\r\n          res.forEach((item, index) => {\r\n            if(item.length > 0) {\r\n              this.activeRepository.active_labels[index].checked_at = item[index].created_at;\r\n            }\r\n          });\r\n        })\r\n      )\r\n      .subscribe((res: Array<Issue[]>) => {\r\n        const newIssues = res.reduce((acc, val) => acc.concat(val), []);\r\n        const newUniqueIssues = this.getUniqueIssues(newIssues.concat(this.activeRepository.issues));\r\n        this.activeRepository.issues = newUniqueIssues;\r\n        this.activeRepository.issues.sort((a: Issue, b: Issue) => {\r\n          if (a.created_at > b.created_at) {\r\n            return 1;\r\n          } else if (a.created_at < b.created_at) {\r\n            return -1;\r\n          }\r\n          return 0;\r\n        });\r\n        this.storageService.setItem(this.activeRepositoryId, this.activeRepository);\r\n      });\r\n  }\r\n\r\n  /**\r\n   * \r\n   * @returns \r\n   */\r\n  fetchIssuesForEachLabel() {\r\n    const labels = this.activeRepository.active_labels.map(label =>\r\n      this.dataService.getIssues(this.activeRepository.full_name, label.name, 1, label.checked_at ?? this.getOneWeekAgo())\r\n        .pipe(\r\n          map(searchResults => searchResults.items)\r\n        )\r\n    );\r\n    return forkJoin(\r\n      labels\r\n    );\r\n  }\r\n\r\n  /**\r\n   * \r\n   * @param issues \r\n   * @returns \r\n   */\r\n  getUniqueIssues(issues: Issue[]): Issue[] {\r\n    const uniqueIssues = [...new Map(issues.map(item => [item.id, item])).values()];\r\n    return uniqueIssues;\r\n  }\r\n\r\n  /**\r\n   * \r\n   * @returns \r\n   */\r\n  getOneWeekAgo(): string {\r\n    let oneWeekAgo = new Date();\r\n    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);\r\n    return oneWeekAgo.toISOString();\r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n    this.componentDestroyed$.next(true);\r\n    this.componentDestroyed$.unsubscribe();\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./repository-details.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "route",
+                        "type": "ActivatedRoute"
+                    },
+                    {
+                        "name": "dataService",
+                        "type": "GithubDataService"
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService"
+                    }
+                ],
+                "line": 20,
+                "jsdoctags": [
+                    {
+                        "name": "route",
+                        "type": "ActivatedRoute",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "dataService",
+                        "type": "GithubDataService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "storageService",
+                        "type": "StorageService",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "OnInit",
+                "OnDestroy"
+            ],
+            "templateData": "<div class=\"container\">\r\n    <div>\r\n        <mat-list>\r\n            <div mat-subheader>Issues</div>\r\n            <mat-list-item *ngFor=\"let issue of this.activeRepository?.issues; trackBy: trackByFunction\">\r\n                <mat-icon mat-list-icon color=\"primary\">info</mat-icon>\r\n                <div mat-line> {{issue.title}} </div>\r\n            </mat-list-item>        \r\n        </mat-list>\r\n    </div>\r\n    <div class=\"fixed bottom-7 right-7\">\r\n        <button mat-fab aria-label=\"Add new repository\" (click)=\"refreshIssues()\">\r\n            <mat-icon>sync</mat-icon>\r\n        </button>\r\n    </div>\r\n</div>"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "LoginComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "MaterialModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "DashboardModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AddRepositoryComponent"
+                        },
+                        {
+                            "name": "DeleteDialogComponent"
+                        },
+                        {
+                            "name": "MainComponent"
+                        },
+                        {
+                            "name": "RepositoryDetailsComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "DashboardRoutingModule"
+                        },
+                        {
+                            "name": "MaterialModule"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "DashboardRoutingModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "MaterialModule",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/test.ts",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/environments/environment.prod.ts",
+                "type": "object",
+                "defaultValue": "{\n  production: true\n}"
+            },
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/environments/environment.ts",
+                "type": "object",
+                "defaultValue": "{\r\n  production: false,\r\n  credentials: {\r\n    client_id: 'b8afef5f955ae3488bf3',\r\n    client_secret: '1e694388cf6769bdeb49c88c13b184d769a940bb'\r\n  },\r\n  github_api: {\r\n    base_url: 'https://api.github.com',\r\n    authorize_url: 'https://github.com/login/oauth/authorize',\r\n    search_issues_url: 'https://api.github.com/search/issues'\r\n  }\r\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Page.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/test.ts",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Page.stories.ts",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                "type": "Story<DeleteDialogComponent>",
+                "defaultValue": "(args: DeleteDialogComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "withKnobsEx",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                "type": "",
+                "defaultValue": "() => ({\r\n  component: Button,\r\n  props: {\r\n    text: text('text', 'Hello Storybook'), // The first param of the knob function has to be exactly the same as the component input.\r\n  },\r\n})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/github-sniffer-web/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/test.ts",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/test.ts",
+                    "type": "literal type"
+                }
+            ],
+            "projects/github-sniffer-web/src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
+                }
+            ],
+            "projects/github-sniffer-web/src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\r\n  production: false,\r\n  credentials: {\r\n    client_id: 'b8afef5f955ae3488bf3',\r\n    client_secret: '1e694388cf6769bdeb49c88c13b184d769a940bb'\r\n  },\r\n  github_api: {\r\n    base_url: 'https://api.github.com',\r\n    authorize_url: 'https://github.com/login/oauth/authorize',\r\n    search_issues_url: 'https://api.github.com/search/issues'\r\n  }\r\n}"
+                }
+            ],
+            "stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Page.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Page.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Page.stories.ts",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                }
+            ],
+            "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts": [
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                    "type": "Story<DeleteDialogComponent>",
+                    "defaultValue": "(args: DeleteDialogComponent) => ({\r\n  props: args,\r\n})"
+                },
+                {
+                    "name": "withKnobsEx",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                    "type": "",
+                    "defaultValue": "() => ({\r\n  component: Button,\r\n  props: {\r\n    text: text('text', 'Hello Storybook'), // The first param of the knob function has to be exactly the same as the component input.\r\n  },\r\n})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "projects/github-sniffer-web/src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "dashboard",
+                        "loadChildren": "./dashboard/dashboard.module#DashboardModule",
+                        "children": [
+                            {
+                                "kind": "module",
+                                "children": [
+                                    {
+                                        "name": "routes",
+                                        "filename": "projects/github-sniffer-web/src/app/dashboard/dashboard-routing.module.ts",
+                                        "module": "DashboardRoutingModule",
+                                        "children": [
+                                            {
+                                                "path": "details/:id",
+                                                "component": "RepositoryDetailsComponent"
+                                            },
+                                            {
+                                                "path": "",
+                                                "component": "MainComponent"
+                                            }
+                                        ],
+                                        "kind": "module"
+                                    }
+                                ],
+                                "module": "DashboardModule"
+                            }
+                        ]
+                    },
+                    {
+                        "path": "login",
+                        "component": "LoginComponent"
+                    },
+                    {
+                        "path": "",
+                        "redirectTo": "dashboard",
+                        "pathMatch": "full"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/github-sniffer-web/e2e/src/app.po.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "AppPage",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/add-repository/add-repository.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AddRepositoryComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/delete-dialog.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DeleteDialogComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/delete-dialog/stories/delete-dialog.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "withKnobsEx",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/main/main.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MainComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/dashboard/repository-details/repository-details.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RepositoryDetailsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/15",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/github-data.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "GithubDataService",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/login/login.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LoginComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/models/repository.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Issue",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/models/repository.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Label",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/models/repository.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Repository",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/models/repository.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/app/storage.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "StorageService",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/environments/environment.prod.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/github-sniffer-web/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            }
+        ]
+    }
+}

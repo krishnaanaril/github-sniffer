@@ -1,0 +1,47 @@
+<div class="container">
+    <form>
+        <div class="flex-col">
+            <div>
+                <h2 class="text-2xl pt-1 pb-2">Add Repository</h2>
+            </div>
+            <div class="flex-col pb-4">
+                <div>
+                    <mat-form-field class="w-full">
+                        <mat-label>Repository Name</mat-label>
+                        <input matInput [formControl]="repository" placeholder="microsoft/vscode">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-raised-button type="button" color="primary" (click)="verifyRepository()">Verify
+                        Repository</button>
+                    <mat-icon *ngIf="repositoryId" class="self-center text-green-700">check_circle</mat-icon>
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+            <div class="pt-3 pb-4">
+                <mat-form-field class="w-full">
+                    <mat-label>Select Labels</mat-label>
+                    <mat-chip-list #chipList aria-label="Label selection">
+                        <mat-chip *ngFor="let label of selectedLabels" [selectable]="selectable" removable="true"
+                            (removed)="remove(label.id)">
+                            {{label.name}}
+                            <mat-icon matChipRemove>cancel</mat-icon>
+                        </mat-chip>
+                        <input placeholder="New Label..." #labelInput [formControl]="labelPrefix"
+                            [matAutocomplete]="auto" [matChipInputFor]="chipList"
+                            [matChipInputSeparatorKeyCodes]="separatorKeysCodes" (matChipInputTokenEnd)="add($event)">
+                    </mat-chip-list>
+                    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                        <mat-option *ngFor="let mlabels of matchingLabels | async" [value]="mlabels">
+                            {{mlabels.name}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+            </div>
+            <div class="flex-row justify-evenly pb-4 pt-3">
+                <button mat-raised-button type="button" color="primary" (click)="onAdd()">Add</button>
+                <button mat-stroked-button type="button" (click)="cancelAddRepository()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>

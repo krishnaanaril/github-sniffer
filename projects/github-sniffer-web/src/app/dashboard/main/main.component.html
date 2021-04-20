@@ -1,0 +1,31 @@
+<div class="container mx-auto">    
+    <mat-list>
+        <div mat-subheader>Your repositories</div>
+        <mat-list-item *ngFor="let repo of activeRepos; index as i">
+            <div class="flex flex-row justify-start w-full" [routerLink]="['/dashboard/details', repo.repository_id]">
+                <mat-icon mat-list-icon color="primary">source</mat-icon>
+                <div> {{repo.full_name}} </div>
+            </div>            
+            <div>
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Your repo's edit options">
+                    <mat-icon color="primary">more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                      <mat-icon  color="primary">edit</mat-icon>
+                      <span>Edit</span>
+                    </button>
+                    <button mat-menu-item (click)="deleteRepository(i)">
+                      <mat-icon color="primary">delete</mat-icon>
+                      <span>Delete</span>
+                    </button>                    
+                  </mat-menu>
+            </div>
+        </mat-list-item>        
+    </mat-list>
+    <div class="fixed bottom-7 right-7">
+        <button mat-fab aria-label="Add new repository" (click)="addRepository()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+</div>

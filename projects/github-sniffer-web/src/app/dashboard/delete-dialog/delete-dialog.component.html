@@ -1,0 +1,9 @@
+<div class="container">
+    <div>
+        Do you want to delete {{data?.full_name}}? 
+    </div>
+    <div class="flex flex-row justify-around pt-5">        
+        <button mat-raised-button (click)="deleteRepository()" color="warn">Delete</button>
+        <button mat-raised-button (click)="cancelDelete()">No</button>
+    </div>
+</div>
