@@ -39,7 +39,7 @@ export class GithubDataService {
     console.info(`Searching for label:${label} in repo:${repo} created after: ${lastCheckDate}.`); 
     const encodedRepo = encodeURIComponent(this.encloseInQuotes(repo));
     const encodedLabel = encodeURIComponent(this.encloseInQuotes(label));
-    const queryString = `q=repo:${encodedRepo}+label:${encodedLabel}+created:>${lastCheckDate}&sort=created&per_page=30&page=${page}`;
+    const queryString = `q=repo:${encodedRepo}+label:${encodedLabel}+is:open+created:>${lastCheckDate}&sort=created&per_page=30&page=${page}`;
     const requestUrl = environment.github_api.search_issues_url + `?${queryString}`;
     return this.http.get(requestUrl);
   }
