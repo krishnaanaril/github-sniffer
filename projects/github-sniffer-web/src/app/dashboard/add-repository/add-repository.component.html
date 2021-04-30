@@ -1,20 +1,24 @@
 <div class="container">
     <form>
         <div class="flex-col">
-            <div>
-                <h2 class="text-2xl pt-1 pb-2">Add Repository</h2>
+            <div class="flex justify-center">
+                <h2 class="inline-block text-xl font-bold pt-5 pb-5">Add Repository</h2>
             </div>
-            <div class="flex-col pb-4">
+            <div class="flex-col pb-10">
                 <div>
                     <mat-form-field class="w-full">
                         <mat-label>Repository Name</mat-label>
                         <input matInput [formControl]="repository" placeholder="microsoft/vscode">
                     </mat-form-field>
                 </div>
-                <div>
-                    <button mat-raised-button type="button" color="primary" (click)="verifyRepository()">Verify
-                        Repository</button>
-                    <mat-icon *ngIf="repositoryId" class="self-center text-green-700">check_circle</mat-icon>
+                <div class="flex flex-col">
+                    <div>
+                        <button mat-raised-button class="w-full" type="button" color="primary" (click)="verifyRepository()">Verify
+                            Repository</button>
+                    </div>
+                    <!-- <div>
+                        <mat-icon *ngIf="repositoryId" class="self-center text-green-700">check_circle</mat-icon>
+                    </div>                     -->
                 </div>
             </div>
             <mat-divider></mat-divider>
@@ -38,9 +42,13 @@
                     </mat-autocomplete>
                 </mat-form-field>
             </div>
-            <div class="flex-row justify-evenly pb-4 pt-3">
-                <button mat-raised-button type="button" color="primary" (click)="onAdd()">Add</button>
-                <button mat-stroked-button type="button" (click)="cancelAddRepository()">Cancel</button>
+            <div class="flex flex-col pb-6">
+                <div>
+                    <button mat-raised-button class="w-full" type="button" color="primary" (click)="onAdd()">Add</button>
+                </div>
+                <div class="flex justify-center pt-2">
+                    <a mat-button (click)="cancelAddRepository()">Cancel</a>
+                </div>                                
             </div>
         </div>
     </form>

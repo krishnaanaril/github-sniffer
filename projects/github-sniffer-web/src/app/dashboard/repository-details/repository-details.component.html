@@ -10,7 +10,7 @@
                         {{issue.title}}
                     </a>
                     <div class="text-xs">
-                        #{{issue.number}} opened {{ timeSince(issue.created_at) }} ago by {{issue.user.login}}
+                        #{{issue.number}} opened {{ timeSince(issue.created_at) }} ago by <a class="border-b-2" [href]="issue.user.html_url">{{issue.user.login}}</a>
                     </div>
                 </div>
             </div>        
